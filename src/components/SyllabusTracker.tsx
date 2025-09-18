@@ -13,8 +13,12 @@ interface SyllabusProgress {
 }
 
 export const SyllabusTracker: React.FC = () => {
+
+
   
-  const [selectedExam, setSelectedExam] = useState<string>('ssc');
+const [selectedExam, setSelectedExam] = useState<string>(
+  () => localStorage.getItem('selectedExam') || 'ssc'
+);
   const [expandedSubjects, setExpandedSubjects] = useState<Set<string>>(new Set());
   const [progress, setProgress] = useLocalStorage<SyllabusProgress>('syllabusProgress', {});
 
@@ -74,7 +78,9 @@ export const SyllabusTracker: React.FC = () => {
           {syllabuses.map((syllabus) => (
             <button
               key={syllabus.id}
-              onClick={() => setSelectedExam(syllabus.id)}
+              onClick={() => {
+                localStorage.setItem("selectedExam",syllabus.id)
+                setSelectedExam(syllabus.id)}}
               className={`flex items-center px-6 py-3 rounded-xl font-semibold transition-all duration-200 ${
                 selectedExam === syllabus.id
                   ? 'bg-blue-600 text-white shadow-lg scale-105'
