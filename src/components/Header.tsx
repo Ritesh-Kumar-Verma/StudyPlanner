@@ -23,7 +23,9 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
           
           <nav className="flex space-x-1">
             <button
-              onClick={() => setActiveTab('syllabus')}
+              onClick={() => {
+                localStorage.setItem("activeTab","syllabus")
+                setActiveTab('syllabus')}}
               className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
                 activeTab === 'syllabus'
                   ? 'bg-blue-600 text-white shadow-md'
@@ -34,7 +36,9 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
               Syllabus
             </button>
             <button
-              onClick={() => setActiveTab('todo')}
+              onClick={() => {
+                localStorage.setItem("activeTab","todo")
+                setActiveTab('todo')}}
               className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
                 activeTab === 'todo'
                   ? 'bg-blue-600 text-white shadow-md'
