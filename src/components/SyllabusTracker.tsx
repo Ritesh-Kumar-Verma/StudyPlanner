@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { syllabuses} from '../data/syllabuses';
 import type { Syllabus, Subject, Topic } from '../data/syllabuses';
 import { useLocalStorage } from '../hooks/useLocalStorage';
-import { ChevronDown, ChevronRight, BookOpen, Trophy, Target } from 'lucide-react';
+import { ChevronDown, ChevronRight, BookOpen, Trophy } from 'lucide-react';
 
 interface SyllabusProgress {
   [examId: string]: {
