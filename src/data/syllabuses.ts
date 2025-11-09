@@ -25,6 +25,128 @@ const createTopics = (topicNames: string[]): Topic[] => {
 };
 
 export const syllabuses: Syllabus[] = [
+
+  
+  {
+    id: 'rrb-technician',
+    name: 'RRB Technician',
+    subjects: [
+      {
+        id: 'gk-rrb-tech',
+        name: 'General Awareness',
+        topics: createTopics([
+          "Knowledge of Current Affairs",
+          "Indian Geography",
+          "Culture and History including Freedom Struggle",
+          "Indian Polity and Constitution",
+          "Indian Economy",
+          "Environmental Issues Concerning India and the World",
+          "Sports",
+          "General Scientific and Technological Developments",
+          "Basic Science and Engineering"
+        ]),
+      },
+      {
+        id: 'physics-fundamentals',
+        name: 'Physics Fundamentals',
+        topics: createTopics([
+          "Units and Measurements",
+          "Mass, Weight, and Density",
+          "Work, Power, and Energy",
+          "Speed and Velocity",
+          "Heat and Temperature",
+          "Electricity and Magnetism"
+        ]),
+      },
+      {
+        id: 'electricity-magnetism',
+        name: 'Electricity & Magnetism',
+        topics: createTopics([
+          "Electric Charge, Field, and Intensity",
+          "Electric Potential and Potential Difference",
+          "Simple Electric Circuits",
+          "Conductors and Insulators",
+          "Ohm’s Law and its Limitations",
+          "Resistance in Series and Parallel",
+          "Specific Resistance",
+          "Relation between Electric Potential, Energy, and Power",
+          "Ampere’s Law",
+          "Magnetic Force on Moving Charges",
+          "Electromagnetic Induction and Faraday’s Law",
+          "Magnetic Field and Magnetic Induction"
+        ]),
+      },
+      {
+        id: 'electronics-measurements',
+        name: 'Electronics and Measurements',
+        topics: createTopics([
+          "Basic Electronics",
+          "Digital Electronics",
+          "Electronic Devices and Circuits",
+          "Microcontroller and Microprocessor",
+          "Electronic Measurements and Measuring Systems",
+          "Range Extension Methods",
+          "CRO (Cathode Ray Oscilloscope)",
+          "LCD and LED Panels",
+          "Transducers"
+        ]),
+      },
+      {
+        id: 'computers',
+        name: 'Basic of Computers and Applications',
+        topics: createTopics([
+          "Architecture of Computers",
+          "Input and Output Devices",
+          "Storage Devices",
+          "Networking",
+          "Operating Systems (Windows, Unix, Linux)",
+          "MS Office",
+          "Data Representation",
+          "Internet and Email",
+          "Websites and Web Browsers",
+          "Computer Virus"
+        ]),
+      },
+      {
+        id: 'math-rrb-tech',
+        name: 'Mathematics',
+        topics: createTopics([
+          "Number System",
+          "Rational and Irrational Numbers",
+          "BODMAS Rule",
+          "Quadratic Equations",
+          "Arithmetic Progression",
+          "Similar Triangles",
+          "Pythagoras Theorem",
+          "Coordinate Geometry",
+          "Trigonometrical Ratios",
+          "Heights and Distances",
+          "Surface Area and Volume"
+        ]),
+      },
+      {
+        id: 'reasoning-rrb-tech',
+        name: 'General Intelligence & Reasoning',
+        topics: createTopics([
+          "Analogies",
+          "Alphabetical and Number Series",
+          "Coding and Decoding",
+          "Mathematical Operations",
+          "Relationships",
+          "Syllogism",
+          "Jumbling",
+          "Venn Diagrams",
+          "Data Interpretation and Sufficiency",
+          "Conclusions and Decision Making",
+          "Similarities and Differences",
+          "Analytical Reasoning",
+          "Classification",
+          "Directions",
+          "Statement–Arguments and Assumptions"
+        ]),
+      },
+    ],
+  },
   {
     id: 'ssc',
     name: 'SSC CGL',
