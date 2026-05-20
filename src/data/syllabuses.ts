@@ -654,12 +654,12 @@ export const syllabuses: Syllabus[] = [
 },
 {
   id: 'CIL',
-  name: 'Exam Syllabus (Paper 1 & Paper 2)',
+  name: 'CIL',
   subjects: [
     // --- PAPER 1 SECTIONS ---
     {
       id: 'general-awareness',
-      name: 'General Awareness',
+      name: '1-General Awareness',
       topics: createTopics([
         "General Science",
         "Inventions & Discoveries",
@@ -686,7 +686,7 @@ export const syllabuses: Syllabus[] = [
     },
     {
       id: 'logical-reasoning',
-      name: 'Logical Reasoning',
+      name: '1-Logical Reasoning',
       topics: createTopics([
         "Alphabetical Series",
         "Number Series",
@@ -709,7 +709,7 @@ export const syllabuses: Syllabus[] = [
     },
     {
       id: 'quantitative-aptitude',
-      name: 'Quantitative Aptitude',
+      name: '1-Quantitative Aptitude',
       topics: createTopics([
         "Number System",
         "LCM-HCF",
@@ -734,7 +734,7 @@ export const syllabuses: Syllabus[] = [
     },
     {
       id: 'english',
-      name: 'English',
+      name: '1-English',
       topics: createTopics([
         "Synonyms",
         "Antonyms",
