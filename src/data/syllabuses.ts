@@ -854,6 +854,7 @@ export const syllabuses: Syllabus[] = [
         "Concurrency",
         "Synchronization",
         "Deadlock",
+        "CPU Scheduling",
         "Memory Management",
         "Virtual Memory",
         "File Systems"
