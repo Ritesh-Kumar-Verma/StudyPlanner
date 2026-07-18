@@ -2,8 +2,8 @@ import React from 'react';
 import { BookOpen, CheckSquare, Target } from 'lucide-react';
 
 interface HeaderProps {
-  activeTab: 'syllabus' | 'todo';
-  setActiveTab: (tab: 'syllabus' | 'todo') => void;
+  activeTab: 'syllabus' | 'todo'| 'study_table';
+  setActiveTab: (tab: 'syllabus' | 'todo' | 'study_table') => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
@@ -47,6 +47,19 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
             >
               <CheckSquare className="h-5 w-5 mr-2" />
               Todo List
+            </button>
+             <button
+              onClick={() => {
+                localStorage.setItem("activeTab","study_table")
+                setActiveTab('study_table')}}
+              className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                activeTab === 'study_table'
+                  ? 'bg-blue-600 text-white shadow-md'
+                  : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
+              }`}
+            >
+              <BookOpen className="h-5 w-5 mr-2" />
+              study_table
             </button>
           </nav>
         </div>
