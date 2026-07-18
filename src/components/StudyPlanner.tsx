@@ -1,4 +1,8 @@
-import React, { useState, useEffect, FormEvent } from 'react';
+import  { useState, useEffect } from 'react';
+import type { FormEvent } from 'react';
+
+
+
 
 type Status = 'pending' | 'studied' | 'skipped';
 
